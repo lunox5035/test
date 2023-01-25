@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+		<table>
+			<thead>
+				<tr>
+					<th>id</th>
+					<th>password</th>
+					<th>이름</th>
+				</tr>
+			</thead>	
+			<button>
+				<a href="main"/>main
+			</button>
+			<tbody>
+				<tr th:each="test_tables : ${test_tables}">
+					<td th:tex="${test_tables.id}"></td>
+					<td th:tex="${test_tables.password}"></td>
+					<td th:tex="${test_tables.name}"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
