@@ -5,6 +5,9 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<button>
+		<a href="main">main</a>
+	</button>
 	<div>
 		<table>
 			<thead>
@@ -13,10 +16,7 @@
 					<th>password</th>
 					<th>이름</th>
 				</tr>
-			</thead>	
-			<button>
-				<a href="main"/>main
-			</button>
+			</thead>
 			<tbody>
 				<tr th:each="test_tables : ${test_tables}">
 					<td th:tex="${test_tables.id}"></td>
